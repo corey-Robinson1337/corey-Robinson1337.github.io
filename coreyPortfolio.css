@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
@@ -61,10 +64,8 @@ img{
     flex-direction: row;
 }
 .navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 100;
     border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 .expand_caret {
     transform: scale(1.6);
@@ -91,4 +92,48 @@ a[aria-expanded='false'] > .expand_caret {
 }
 .carousel-indicators li{
     border: 2px solid black;
+}
+
+#facebook{
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+}
+#instagram{
+    background: #125688;
+    color: white;
+    text-decoration: none;
+}
+#linkedin{
+    background: #007bb5;
+    color: white;
+    text-decoration: none;
+}
+#github{
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+#mail{
+    background: #c33;
+    color: white;
+    text-decoration: none;
+}
+.social-icon{
+    margin-left: 5px;
+    padding: 12.5px;
+    font-size: 50px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.social-icon a{
+    text-decoration: none;
+}
+#social-icon-holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
