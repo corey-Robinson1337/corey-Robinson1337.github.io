@@ -1,0 +1,217 @@
+/* universal styles */
+* {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* SVG classes */
+.wave-blue-right{
+    background: url("../img/backgrounds/wave-haikei-blue-right.svg") no-repeat center;
+    background-size: cover;
+}
+.wave-blue-left{
+    background: url("../img/backgrounds/wave-haikei-blue-left.svg") no-repeat center;
+    background-size: cover;
+}
+.blue-br-corner{
+    background: url("../img/backgrounds/wave-haikei-blue-br-corner.svg") no-repeat center;
+    background-size: cover;
+}
+.wave-dblue-right{
+    background: url("../img/backgrounds/wave-haikei-dblue-right.svg") no-repeat center;
+    background-size: cover;
+}
+.wave-black-right{
+    background: url("../img/backgrounds/wave-haikei-black-curve-right.svg") no-repeat center;
+    background-size: cover;
+}
+.wave-dblue-left{
+    background: url("../img/backgrounds/wave-haikei-dblue-left.svg") no-repeat center;
+    background-size: cover;
+}
+.yellow-bl-corner{
+    background: url("../img/backgrounds/wave-haikei-yellow-bl-corner.svg") no-repeat center;
+    background-size: cover;
+}
+.chev-yellow-left{
+    background: url("../img/backgrounds/wave-haikei-yellow-chev-left.svg") no-repeat center;
+    background-size: cover;
+}
+.yellow-blob{
+    background: url("../img/backgrounds/blob-yellow.svg") no-repeat center;
+    background-size: cover;
+}
+.chev-yellow-right{
+    background: url("../img/backgrounds/wave-haikei-yellow-chev-right.svg") no-repeat center;
+    background-size: cover;
+}
+.layered-wave-yellow{
+    background: url("../img/backgrounds/layered-waves-haikei-yellow.svg") no-repeat center;
+    background-size: cover;
+}
+/* theme borders */
+.dblue-border{
+    border-color: #4059AD !important;
+}
+.blue-border{
+    border-color: #6B9AC4 !important;
+}
+.black-border{
+    border-color: #0D0106 !important;
+}
+.yellow-border{
+    border-color: #FFBA49 !important;
+}
+.dyellow-border{
+    border-color: #FA9F42 !important;
+}
+/* Nav styles*/
+nav{
+    background-color: white !important;
+    transition-timing-function: ease-in-out;
+    transition: 0.4s;
+}
+.nav-logo{
+    height: 100%;
+    object-fit: contain;
+}
+.navbar-brand{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px !important;
+}
+/* give 70 margin top to compensate*/
+.nav-compensate{
+    padding-top: 70px;
+}
+.dropdown-menu{
+    background-color: white;
+}
+/* common transitions */
+.slide-up{
+    transform: translateY(-105%);
+    transition-timing-function: ease-in-out;
+    transition: 0.4s;
+  }
+.nav-drop-icon{
+    position: absolute;
+    right: 10px;
+    color: #0D0106;
+}
+@media all and (min-width: 768px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .dropdown {display: flex; height: 63px; margin-bottom: -3px; border-bottom: 3px solid;}
+    .nav-drop-icon{display: none;}
+    .login-div-mobile{display: none;}
+    .login-div-desktop{display: block;}
+}
+@media all and (max-width: 768px) {
+	.dropdown>a {color: white!important; border: none!important}
+    .login-div-mobile{display: block;}
+    .login-div-desktop{display: none;}
+    
+}
+.nav-hamburger{
+    color: white;
+}
+.container {
+    max-width: 960px;
+}
+.asteriskField{
+    color: red;
+}
+/*form styles*/
+.form-label{
+    font-weight: 700!important;
+}
+.messages{
+    max-width: 1000px;
+}
+#signature{
+    stroke-dasharray: 2231;
+    stroke-dashoffset: 2231;
+    animation: sign 4s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes sign{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.maincard {
+    position: relative;
+    width: 80px;
+    height: 80px
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease
+}
+
+.thecard:hover {
+    transform: rotateY(180deg)
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hidden;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 4px
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hidden;
+    color: #fff;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 4px;
+}
+
+.social-text small {
+    font-size: 12px;
+}
+
+@media (max-width:700px) {
+    .social-list {
+        display: block
+    }
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.instagram {
+    background: #ac2bac;
+}
+
+.github {
+    background: #333333;
+}
+
+.linkedin {
+    background: #0082ca;
+}
+
+.email {
+    background: #cb2027;
+}

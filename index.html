@@ -1,159 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Corey Robinson</title>
-    <link rel="icon" href="images/KHS/cr_letters.png" type="image/x-icon">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="Corey Robinson">
+    <meta name="generator" content="Hugo 0.80.0">
+    <link rel="icon" 
+    type="image/png" 
+    href="assets/img/logo/cr.png" />
+    <title>Corey Robinson</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="coreyPortfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/common_theme.css" rel="stylesheet">
+    <script src="assets/js/navbar.js"></script>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Corey Robinson</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#myProjects">Projects</a></li>
-        <li><a href="#mySocial">Social</a></li>
-          <li><a href="https://www.biblestudytools.com/john/">Got Jesus?</a></li>
+<nav class="navbar navbar-expand-md shadow navbar-light fixed-top p-0 wave-dblue-left">
+  <div class="container" style="max-width: 1200px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars nav-hamburger"></i>
+    </button>
+    <a class="navbar-brand display-3 text-white" href="/">
+        <img src="assets/img/logo/cr.png" class="h-100 p-1">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarCollapse" style="height: 60px;">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0 h-100">
+        <li class="nav-item dropdown rounded-bottom border-3 dyellow-border">
+          <a class="fw-bold nav-link my-auto d-flex align-items-center" href="#" id="dropdown1" aria-expanded="false">About Me</a>
+        </li>
+        <li class="nav-item dropdown rounded-bottom border-3 blue-border">
+          <a class="fw-bold nav-link my-auto d-flex align-items-center" href="#projects" id="dropdown1" aria-expanded="false">Projects <i id="expand-projects" class="nav-drop-icon fas fa-plus-square fa-lg"></i></a>
+          <ul id="projects-menu" class="dropdown-menu rounded-top border-3 border-top blue-border" aria-labelledby="dropdown1">
+            <li><a class="dropdown-item" href="#khs">Kentucky Hoops Source</a></li>
+            <li><a class="dropdown-item" href="#dfstud">DFStud</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown rounded-bottom border-3 yellow-border">
+          <a class="fw-bold nav-link my-auto d-flex align-items-center" href="#socials" id="dropdown1" aria-expanded="false">Socials <i id="expand-socials" class="nav-drop-icon fas fa-plus-square fa-lg"></i></a>
+          <ul id="socials-menu" class="dropdown-menu rounded-top border-3 border-top yellow-border" aria-labelledby="dropdown1">
+            <li><a class="dropdown-item" href="https://www.facebook.com/corey.robinson.5036459">Facebook</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/corey_robinson7/?hl=en">Instagram</a></li>
+            <li><a class="dropdown-item" href="https://github.com/corey-Robinson1337">GitHub</a></li>
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/corey-robinson-343b9214b">Linkedin</a></li>
+            <li><a class="dropdown-item" href="mailto:corey_robinson@mymail.eku.edu">Email</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-    <h2 id="aboutMe" class="margin text-outline">About Me</h2>
-    <img src="images/KHS/pikachu.gif">
-    <h3 class="text-outline">24 years old | Christian | Memer | Lifter | Paleo-Conservative | Wannabe Fantasy Guru</h3>
-    <div class="well">
-        <p class="text-dark-blue">I graduated in Spring 2019 from Eastern Kentucky University with a B.S. I majored in computer science and statistics and minored in math. I like to lift weights, cook, and spend time with my girlfriend Cassidy. I'm into fantasty sports and like to hack around in my free time by creating small programs relating to fantasy football and basketball. I'm a Christian and my faith is important to me. Jesus is King.</p>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-                <div class="row">
-                    <img class="col-md-3" src="images/KHS/corey_cass.JPG">
-                    <img class="col-md-3" src="images/KHS/corey_cass2.JPG">
-                    <img class="col-md-3" src="images/KHS/corey_cass4.JPG">
-                    <img class="col-md-3" src="images/KHS/corey_cass3.JPG">
-                </div>
-              <div class="carousel-caption text-outline">
-                <h3>Me & Cass</h3>
-              </div>
-            </div>
-
-            <div class="item">
-                <div class="row">
-                    <img class="col-md-3" src="images/KHS/corey_gym1.JPG">
-                    <img class="col-md-3" src="images/KHS/corey_jym.JPG">
-                    <img class="col-md-3" src="images/KHS/corey_gym2.JPG">
-                    <img class="col-md-3" src="images/KHS/corey_gym3.JPG">
-                </div>
-              <div class="carousel-caption text-outline">
-                <h3>Gym</h3>
-                <p>"I like to pick the weight up and put it back down" - THE PROGRAM<i class='fa fa-trademark' style='font-size:8px'></i></p>
-              </div>
-            </div>
-              
-            <div class="item">
-                <div class="row">
-                    <img class="col-md-3" src="images/KHS/christian_meme.JPG">
-                    <img class="col-md-3" src="images/KHS/looney_tunes.JPG">
-                    <img class="col-md-3" src="images/KHS/christian_meme2.JPG">
-                    <img class="col-md-3" src="images/KHS/big_cheems.JPG">
-                </div>
-              <div class="carousel-caption text-outline">
-                <h3>Meme Dump</h3>
-              </div>
+<div id="about-me">
+  <div class="wave-blue-right">
+    <div  class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 ms-auto me-auto">
+            <img src="assets/img/about_me/graduation_picture.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Hi, I'm <svg  style="height:100%; max-width:100%;" viewBox="0 0 581 368" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M115 95C133.503 94.5487 142 69.0306 142 54C142 41.4918 126.383 40 116.5 40C102.586 40 91.22 47.6814 83.0005 58.7778C68.8257 77.9137 58.6042 99.8843 54.0005 123.444C50.8923 139.351 51.0005 156.351 51.0005 172.5C51.0005 187.565 55.1429 206.041 70.056 213C75.6324 215.602 82.2453 218.092 88.556 216.944C94.5857 215.848 100.179 213.504 106.612 212.944C127.5 211.128 155.49 196.913 162.778 175.778C165.095 169.059 165.217 161.546 167.223 154.778C168.006 152.133 171.026 143.652 170.778 144.444C168.44 151.927 161.011 157.979 157.5 165C152.999 174.003 148.995 181.33 150.056 191.944C150.718 198.567 162.657 205.44 168.5 206.056C183.319 207.615 198.29 204.599 209.389 193.5C226.501 176.389 218.214 143.529 199.778 130.556C192.721 125.59 186.393 126 178 126C172.418 126 166.635 125.287 163.778 131C156.037 146.483 170.798 155.716 183.556 160.556C190.963 163.365 197.503 164.848 205.556 165C213.507 165.15 221.806 167.264 229.723 165.389C236.115 163.875 251.249 150.994 246.445 143.444C243.066 138.134 233.332 133.226 227.223 133C215.085 132.55 233.332 132 237 132C250.755 132 264.216 134 278 134C282.966 134 288.034 134.318 292.945 133.5C299.337 132.435 297.914 132.086 294.556 135.444C282.578 147.423 276.585 162.583 278.056 179.5C279.847 200.099 307.965 208.878 323.556 197.444C331.228 191.818 335.251 184.611 339.556 176C344.315 166.483 349 155.022 349 144.222C349 138.659 348.208 134.537 343 132.222C338.195 130.086 333.927 139.781 332.223 143C328.258 150.489 329 157.534 329 165.944C329 172.093 330.417 177.131 332.223 183C333.425 186.909 337.859 189.204 340.056 192.5C348.958 205.853 367.288 195.628 375.056 186.889C382.095 178.969 384.457 166.81 388 157.222C391.035 149.012 393 122.692 393 131.444C393 140.298 385.888 149.406 383.5 158C382.476 161.688 382 166.167 382 170C382 178.642 384.797 184.353 391 190.556C393.858 193.413 400.362 193 404 193C414.81 193 425.31 182.379 432 174.944C442.209 163.602 448.355 149.161 452.445 134.556C453.539 130.649 455.315 126.091 455 122C454.866 120.247 454.234 125.433 453.945 127.167C452.818 133.928 450.083 140.05 447.612 146.389C439.871 166.244 435.505 187.808 429.445 208.222C423.198 229.263 412.569 248.447 403.445 268.333C395.698 285.217 383.898 302.577 371.445 316.333C356.006 333.388 338.038 344.341 317.445 354C292.834 365.543 243.155 368.4 249.556 328.167C252.7 308.403 271.158 293.642 286.945 283.556C312.676 267.116 341.244 257.878 369.389 246.556C398.748 234.744 428.01 224.698 454.556 207C484.1 187.304 511.395 165.508 531 135.556C542.3 118.292 545 100.556 545 80.4444C545 70.1038 542.351 54.4675 536 46" stroke="black" id="signature" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></h1>
+            <p class="lead">I graduated from EKU with a bachelor's of science in Spring 2018. I majored in Computer Science & Statistics.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             </div>
           </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-    </div>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-    <h2 id="myProjects" class="margin text-outline">Projects</h2>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <a class="text-left" href="https://www.kentuckyhoopssource.com"><h2>Kentucky Hoops Source</h2></a>
-        </div>
-        <div class="panel-body">
-            <h3>Kentucky Hoops Source is a website with up-to-date high school basketball stats and lite social elements (live game chat and image uploads).</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="panel panel-small panel-default text-left">
-                        <h3 class="khs-panel-heading panel-heading text-left">Game Stats and Live Chat</h3>
-                        <img src="images/KHS/game_stats_chat.gif" class="img-responsive margin panel-body" style="width:100%" alt="Image">
-                    </div>
-                </div>
-                <div class="col-md-4"> 
-                  <div class="panel panel-small panel-default">
-                        <h3 class="khs-panel-heading panel-heading text-left">Player Stats and Images</h3>
-                        <img src="images/KHS/player_stats_images.gif" class="img-responsive margin panel-body" style="width:100%" alt="Image">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-small panel-default text-left">
-                        <h3 class="khs-panel-heading panel-heading text-left">Team Rosters and Schedule</h3>
-                        <img src="images/KHS/team_games_players.gif" class="img-responsive margin panel-body" style="width:100%" alt="Image">
-                    </div>
-                </div>
+      </div>
+  </div>
+  <div class="wave-dblue-left">
+    <div  class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 ms-auto me-auto">
+            <img src="assets/img/about_me/corey_cassidy.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="card p-4 col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">This is my Fiancée Cassidy</h1>
+            <p class="lead">We'll be married on 09/25/2021! We like to spend time together watching reality tv shows, cooking, playing smash bros, and going on walks.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             </div>
-            <div class="text-left well">
-                <a href="#techDetails" data-toggle="collapse">Technical Details <div class="expand_caret caret"></div></a>
-                <div id="techDetails" class="collapse">
-                    Lamp stack web application (Linux - Centos8, Apache, MariaDB, PHP-PHP 7.4). Hosted using cloud provider Digital Ocean. Digital Ocean spaces used for storage (similar in function and use to AWS s3). Vanilla javascript and css.
-                </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="wave-dblue-right">
+    <div  class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 ms-auto me-auto">
+            <img src="assets/img/about_me/lift_corey.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6 card p-4">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Interests & Hobbies</h1>
+            <p class="lead">I'm a Christian and my faith is important to me. Jesus is King! Some of my hobbies are lifting weights, coding, dank-meming, & cooking</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div>
+    <div class="container py-5" id="custom-cards">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/about_me/porkloin.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/about_me/smash_bros.png" class="card-img-top" alt="...">
             </div>
         </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/about_me/christian_meme.JPG" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 id="mySocial" class="">Follow Me</h3>
-    <div id="social-icon-holder">
-        <a id="facebook" href="https://www.facebook.com/corey.robinson.5036459" class="fa fa-facebook social-icon" style="font-size: 50px"></a>
-        <a id="instagram" href="https://www.instagram.com/corey_robinson7/?hl=en" class="fa fa-instagram social-icon" style="font-size: 50px"></a>
-        <a id="linkedin" href="https://www.linkedin.com/in/corey-robinson-343b9214b" class="fa fa-linkedin social-icon" style="font-size: 50px"></a>
-        <a id="github" href="https://github.com/corey-Robinson1337" class="fa fa-github social-icon" style="font-size: 50px"></a>
-        <a id="mail" href="mailto:corey_robinson@mymail.eku.edu" class="social-icon material-icons" ><i class="material-icons" style="font-size: 50px">email</i></a>
+<div id="projects">
+  <div class="wave-blue-left">
+    <div  class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 ms-auto me-auto">
+            <img src="assets/img/projects/pikachu.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Projects</h1>
+            <p class="lead">Here's some of the things I'm working on. Feel free to send me an email with any feedback!</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div id="khs" class="">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">Kentucky Hoops Source</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"><a href="https://kentuckyhoopssource.com">Kentucky Hoops Source</a> is a website I made to allow for easier viewing of Kentucky High School Basketball Stats. You can think of it as a basketball reference for high school basketball in Kentucky. Personally I find it to be the easiest way to view stats as other sources don't allow you to see the stats of both teams on the same page or have a way of viewing aggregated stats such as career or season-long stats</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="https://kentuckyhoopssource.com"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Visit Site</button></a>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="assets/img/projects/kentucky_hoops_source/kentucky_hoops_landing.PNG" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>
     </div>
+    <div class="chev-yellow-right">
+      <div class="container-fluid py-5 px-5" id="custom-cards">
+        <h2 class="display-6 fw-bold lh-1">KHS Features</h2>
+        <div class="row text-center row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/projects/kentucky_hoops_source/game_stats_chat.gif" class="card-img-top" alt="...">
+              <p class="h4 lh-1">View Game Stats for both teams and participate in live discussion</p>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/projects/kentucky_hoops_source/player_stats_images.gif" class="card-img-top" alt="...">
+                <p class="h4 lh-1">View Season / Career stats for players. Add pictures of your favorite players</p>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/projects/kentucky_hoops_source/team_games_players.gif" class="card-img-top" alt="...">
+              <p class="h4 lh-1">View team rosters and stats quickly!</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="dfstud" class="">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">Coming Soon... DFStud</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">DFStud is an upcoming fantasy sports analytics site. The site will use data science methodologies to give your fantasy sports lineups a leg up on the competetion. The site is powered by proven algorithms that I've used to win Fantasy Leagues and Daily Fantasy Contests.</p>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="assets/img/projects/dfstud/dfstud_landing.PNG" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="chev-yellow-left">
+      <div class="container-fluid py-5 px-5" id="custom-cards">
+        <h2 class="display-6 fw-bold lh-1">DFStud Features</h2>
+        <div class="row text-center row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/projects/dfstud/dfstud_basketball.PNG" class="card-img-top" alt="...">
+              <p class="h4 lh-1">Projections and automatic lineup creation for major fantasy sports</p>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/projects/dfstud/dfstud_subscription.PNG" class="card-img-top" alt="...">
+                <p class="h4 lh-1">Go gigastud and gain Access to exclusive features</p>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/projects/dfstud/dfstud_contests.PNG" class="card-img-top" alt="...">
+              <p class="h4 lh-1">Expected value analysis on sportsbooks and daily fantasy contests</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="py-5 blue-br-corner" id="socials">
+  <div class="container my-5" style="background: white;">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">Socials</h1>
+        <p class="lead">Feel Free to Add me on Social media!</p>
+        <div class="d-flex gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <div class="maincard">
+            <a href="https://www.facebook.com/corey.robinson.5036459">
+              <div class="thecard">
+                <div class="thefront text-center py-4 facebook">
+                    <div class="social-icon"> <i class="fab fa-facebook-f fa-2x"></i> </div>
+                </div>
+                <div class="theback py-3 px-3 h-100 text-center facebook">
+                    <div class="d-flex justify-content-center mb-1 align-items-center social-text h-100"> <small class="font-weight-bold">Facebook</small> </div>
+                </div>
+              </div>
+            </a> 
+        </div>
+        <div class="maincard">
+          <a href="https://www.instagram.com/corey_robinson7/?hl=en">
+            <div class="thecard">
+              <div class="thefront text-center py-4 instagram">
+                  <div class="social-icon"> <i class="fab fa-instagram fa-2x"></i> </div>
+              </div>
+              <div class="theback py-3 px-3 h-100 text-center instagram">
+                  <div class="d-flex justify-content-center mb-1 align-items-center social-text h-100"> <small class="font-weight-bold">Instagram</small> </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="maincard">
+          <a href="https://github.com/corey-Robinson1337">
+            <div class="thecard">
+              <div class="thefront text-center py-4 github">
+                  <div class="social-icon"> <i class="fab fa-github fa-2x"></i> </div>
+              </div>
+              <div class="theback py-3 px-3 h-100 text-center github">
+                  <div class="social-text h-100 justify-content-center mb-1 d-flex align-items-center"> <small class="font-weight-bold">GitHub</small> </div>
+              </div>
+            </div>
+          </a> 
+        </div>
+        <div class="maincard">
+          <a href="https://www.linkedin.com/in/corey-robinson-343b9214b">
+            <div class="thecard">
+              <div class="thefront text-center py-4 linkedin">
+                  <div class="social-icon"> <i class="fab fa-linkedin fa-2x"></i> </div>
+              </div>
+              <div class="theback py-3 px-3 h-100 text-center linkedin">
+                  <div class="social-text h-100 d-flex justify-content-center mb-1 align-items-center"> <small class="font-weight-bold">Linkedin</small> </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="maincard">
+            <a href="mailto:corey_robinson@mymail.eku.edu">
+              <div class="thecard">
+                <div class="thefront text-center py-4 email">
+                    <div class="social-icon"> <i class="fas fa-envelope fa-2x"></i> </div>
+                </div>
+                  <div class="theback py-3 px-3 h-100 text-center email">
+                      <div class="social-text h-100 d-flex justify-content-center mb-1 align-items-center"> <small class="font-weight-bold">Email</small> </div>
+                  </div>
+              </div>
+            </a>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 position-relative overflow-hidden shadow-lg">
+        <div class="position-lg-absolute top-0 left-0 overflow-hidden">
+          <img class="d-block rounded-lg-3" src="https://images.squarespace-cdn.com/content/v1/531d2a24e4b0baf9a0e963c4/1597684779915-LDKDSP8R2I976E3748P1/ke17ZwdGBToddI8pDm48kFN-DFK1eK1PdvHSeEQ1GP0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcMjTBaMDyDtF-PZ6G0utiW5P6KPxcFyIcI8wqAQSp9vX3A5KcwvKKTYWvQrEWfIO1/KON-04-1805-blog1-ppc-v01.png" alt="" width="720">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
