@@ -215,3 +215,23 @@ nav{
 .email {
     background: #cb2027;
 }
+
+.slide{
+    opacity: 1!important;
+    transform: translate(0px,0px)!important;
+}
+.slide-l{
+    opacity: 0;
+    transform: translateX(-99%);
+    transition: transform 2s, opacity 2s ease;
+}
+.slide-r{
+    opacity: 0;
+    transform: translateX(99%);
+    transition: transform 2s, opacity 2s ease;
+}
+.slide-u{
+    opacity: 0;
+    transform: translateY(99%);
+    transition: transform 2s, opacity 2s ease;
+}

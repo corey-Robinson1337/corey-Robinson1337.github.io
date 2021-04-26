@@ -27,4 +27,25 @@ $(document).ready(function(){
       dropdown.classList.remove('fa-minus-square');
     }
   });
+  const slidersL = document.querySelectorAll("[class*='slide-l']");
+  const slidersR = document.querySelectorAll("[class*='slide-r']");
+  const slidersU = document.querySelectorAll("[class*='slide-u']");
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if(entry.target.classList.contains("slide-r")){
+          entry.target.classList.add('slide');
+        }
+        else{
+          entry.target.classList.add('slide');
+        }
+      }
+    })
+  }
+  const options = {}
+
+  const myObserver = new IntersectionObserver(callback, options);
+  slidersL.forEach(slider => myObserver.observe(slider));
+  slidersR.forEach(slider => myObserver.observe(slider));
+  slidersU.forEach(slider => myObserver.observe(slider));
 });
