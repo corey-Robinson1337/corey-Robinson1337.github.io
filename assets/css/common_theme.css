@@ -132,7 +132,7 @@ nav{
 #signature{
     stroke-dasharray: 2231;
     stroke-dashoffset: 2231;
-    animation: sign 4s ease-in;
+    animation: sign 2s ease-in;
     animation-fill-mode: forwards;
 }
 @keyframes sign{
