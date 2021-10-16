@@ -152,11 +152,11 @@ nav{
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: all 0.8s ease
+    transition: all 0.8s ease;
 }
 
 .thecard:hover {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
 .thefront {
@@ -234,4 +234,18 @@ nav{
     opacity: 0;
     transform: translateY(99%);
     transition: transform 2s, opacity 2s ease;
+}
+/*glassmorphism effect*/
+.glass{
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.modern-card{
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
